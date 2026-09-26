@@ -337,6 +337,25 @@ h2 {
   scroll-margin-top: 24px;
 }
 
+.disease-page .disease-figure {
+  margin: 28px 0;
+  text-align: center;
+}
+
+.disease-page .disease-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
+
+.disease-page .disease-figure figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .disease-page .oct-comparison {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
