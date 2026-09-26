@@ -1,83 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Retina Sight | 網膜・黄斑疾患と治療の情報サイト</title>
-
+  <meta name="description" content="網膜や黄斑の病気、検査、治療について、必要な情報をわかりやすく整理して紹介します。">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-  <header>
-    <div class="header-inner">
-      <div class="logo">Retina Sight</div>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-brand">
+        <div class="site-brand-text">
+          <a class="site-title" href="index.html">Retina Sight</a>
+          <p class="tagline">網膜・黄斑疾患と治療の情報サイト</p>
+        </div>
+      </div>
+      <nav aria-label="メインメニュー">
+        <a class="nav-start" href="#start">はじめに</a>
+        <a href="#categories">疾患から探す</a>
+      </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Retina Sight</h1>
-      <p class="hero-subtitle">
-        網膜・黄斑疾患と治療の情報サイト
-      </p>
-    </div>
-  </section>
-
   <main>
-
-    <div class="intro">
-      <p>
-        網膜や黄斑の病気、検査、治療について、
-        必要な情報をわかりやすく整理して紹介します。
-      </p>
-    </div>
-
-    <section>
-      <h2>疾患から探す</h2>
-
-      <div class="disease-grid">
-
-        <a class="disease-card" href="#">
-          <strong>加齢黄斑変性</strong>
-          <span>Age-related macular degeneration</span>
-        </a>
-
-        <a class="disease-card" href="#">
-          <strong>糖尿病黄斑浮腫</strong>
-          <span>Diabetic macular edema</span>
-        </a>
-
-        <a class="disease-card" href="#">
-          <strong>網膜静脈閉塞症</strong>
-          <span>Retinal vein occlusion</span>
-        </a>
-
-        <a class="disease-card" href="diseases/erm.html">
-          <strong>黄斑上膜</strong>
-          <span>Epiretinal membrane</span>
-        </a>
-
-        <a class="disease-card" href="#">
-          <strong>黄斑円孔</strong>
-          <span>Macular hole</span>
-        </a>
-
-        <a class="disease-card" href="#">
-          <strong>網膜剥離</strong>
-          <span>Retinal detachment</span>
-        </a>
-
+    <section id="start" class="hero" aria-labelledby="intro-heading">
+      <div class="container narrow">
+        <h1 id="intro-heading">網膜・黄斑疾患と治療の<br>情報サイト</h1>
+        <p class="lead">
+          網膜や黄斑の病気、検査、治療について、<br>
+          必要な情報をわかりやすく整理して紹介します。
+        </p>
       </div>
     </section>
 
+    <section id="categories" class="section alt" aria-labelledby="diseases-heading">
+      <div class="container">
+        <h2 id="diseases-heading">疾患から探す</h2>
+        <div class="cards">
+          <a class="card category-card" href="#">
+            <h3>加齢黄斑変性</h3>
+            <p lang="en">Age-related macular degeneration</p>
+          </a>
+          <a class="card category-card" href="#">
+            <h3>糖尿病黄斑浮腫</h3>
+            <p lang="en">Diabetic macular edema</p>
+          </a>
+          <a class="card category-card" href="#">
+            <h3>網膜静脈閉塞症</h3>
+            <p lang="en">Retinal vein occlusion</p>
+          </a>
+          <a class="card category-card" href="diseases/erm.html">
+            <h3>黄斑上膜</h3>
+            <p lang="en">Epiretinal membrane</p>
+          </a>
+          <a class="card category-card" href="#">
+            <h3>黄斑円孔</h3>
+            <p lang="en">Macular hole</p>
+          </a>
+          <a class="card category-card" href="#">
+            <h3>網膜剥離</h3>
+            <p lang="en">Retinal detachment</p>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    © Retina Sight
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Retina Sight. All rights reserved.</p>
+    </div>
   </footer>
-
 </body>
 </html>
