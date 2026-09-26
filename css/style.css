@@ -311,6 +311,28 @@ h2 {
   margin-top: 40px;
 }
 
+.disease-page .disease-section > p {
+  margin: 1.25em 0;
+}
+
+.disease-page .detail-topics,
+.disease-page .reference-list {
+  padding-left: 1.5em;
+}
+
+.disease-page .detail-topics li {
+  margin: 10px 0;
+}
+
+.disease-page .reference-list {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.disease-page .reference-list li {
+  margin: 16px 0;
+}
+
 .disease-page h2[id] {
   scroll-margin-top: 24px;
 }
