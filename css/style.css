@@ -246,3 +246,116 @@ h2 {
     scroll-behavior: auto;
   }
 }
+
+/* 疾患ページ専用。共通の配色と本文幅を使い、トップページには適用しない。 */
+.disease-page .breadcrumb,
+.disease-page .toc {
+  display: block;
+}
+
+.disease-page .breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.disease-page .breadcrumb-separator {
+  margin-right: 10px;
+}
+
+.disease-page .breadcrumb a,
+.disease-page .toc a {
+  color: var(--accent);
+  font-size: inherit;
+  text-decoration: underline;
+}
+
+.disease-page .disease-heading h1 {
+  margin-bottom: 4px;
+}
+
+.disease-page .disease-name-en {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.disease-page .toc {
+  margin: 32px 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--soft-blue);
+}
+
+.disease-page .toc h2 {
+  margin-bottom: 12px;
+}
+
+.disease-page .toc ol {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+.disease-page .toc a {
+  display: inline-block;
+  padding: 4px 0;
+}
+
+.disease-page .disease-section {
+  margin-top: 40px;
+}
+
+.disease-page h2[id] {
+  scroll-margin-top: 24px;
+}
+
+.disease-page .oct-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.disease-page .oct-comparison figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.disease-page .oct-comparison figcaption {
+  margin-bottom: 8px;
+  color: var(--heading);
+  font-weight: 700;
+}
+
+.disease-page .image-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  padding: 20px;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  background: var(--soft-blue);
+  color: var(--muted);
+  text-align: center;
+}
+
+.disease-page .disease-back {
+  margin: 40px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+  .disease-page .oct-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .disease-page .toc {
+    padding: 16px;
+  }
+}
