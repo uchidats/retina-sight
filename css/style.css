@@ -467,10 +467,10 @@ h2 {
 }
 
 .treatment-page .drug-comparison {
-  min-width: 1320px;
+  min-width: 1370px;
 }
 
-.treatment-page .drug-comparison .generic-column { width: 180px; }
+.treatment-page .drug-comparison .generic-column { width: 230px; }
 .treatment-page .drug-comparison .product-column { width: 220px; }
 .treatment-page .drug-comparison .year-column { width: 100px; }
 .treatment-page .drug-comparison .structure-column { width: 180px; }
@@ -496,11 +496,6 @@ h2 {
   white-space: nowrap;
 }
 
-.treatment-page .drug-comparison .related-drug-row > * {
-  background: #f8fafb;
-  font-size: 0.9rem;
-}
-
 .treatment-page .related-drug-parent {
   display: block;
   margin-top: 6px;
@@ -513,19 +508,19 @@ h2 {
   display: inline-block;
   padding: 2px 8px;
   border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: inherit;
+  font-weight: inherit;
+  white-space: nowrap;
 }
 
 .treatment-page .badge-bs {
-  padding: 2px 5px;
-  font-size: 0.75rem;
-  white-space: nowrap;
   background: var(--soft-blue);
   color: var(--heading);
 }
 
 .treatment-page .drug-comparison .same-as-parent {
   color: var(--muted);
+  font-size: inherit;
   font-style: normal;
   text-align: center;
 }
