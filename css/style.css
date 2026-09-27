@@ -624,16 +624,23 @@ h2 {
   vertical-align: -0.1em;
 }
 
-.treatment-page .leaflet-placeholder,
 .treatment-page .leaflet-link {
   display: block;
   margin-top: 8px;
   font-size: 0.8rem;
   font-weight: 400;
+  width: fit-content;
+  text-decoration-thickness: 1px;
 }
 
-.treatment-page .leaflet-placeholder {
-  color: var(--muted);
+.treatment-page .reference-updated {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.treatment-page .reference-updated p {
+  margin: 0 0 8px;
 }
 
 .treatment-page .table-legend {
