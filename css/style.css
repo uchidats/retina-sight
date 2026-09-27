@@ -458,15 +458,77 @@ h2 {
   color: var(--muted);
 }
 
-.treatment-page .interval-details {
-  margin: 0;
+.treatment-page .quick-reference {
+  margin-top: 48px;
 }
 
-.treatment-page .interval-details dt:not(:first-child) {
-  margin-top: 10px;
+.treatment-page .quick-reference-intro {
+  padding: 20px;
+  border-left: 3px solid var(--accent);
+  background: var(--soft-blue);
 }
 
-.treatment-page .interval-details dd {
+.treatment-page .quick-reference-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.treatment-page .audience-label {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.treatment-page .quick-reference h3[id] {
+  scroll-margin-top: 24px;
+}
+
+.treatment-page .heading-subline {
+  display: block;
+  margin-top: 4px;
+}
+
+.treatment-page .interval-table {
+  min-width: 1040px;
+}
+
+.treatment-page .interval-table th:first-child {
+  width: 240px;
+}
+
+.treatment-page .interval-lines {
+  display: grid;
+  gap: 4px;
+}
+
+.treatment-page .interval-lines strong {
+  color: var(--heading);
+  font-size: 1.05rem;
+}
+
+.treatment-page .leaflet-placeholder,
+.treatment-page .leaflet-link {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.treatment-page .leaflet-placeholder {
+  color: var(--muted);
+}
+
+.treatment-page .table-legend {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 16px;
+  font-size: 0.9rem;
+}
+
+.treatment-page .table-legend dt {
+  font-weight: 700;
+}
+
+.treatment-page .table-legend dd {
   margin: 0;
 }
 
