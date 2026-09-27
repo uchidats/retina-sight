@@ -662,6 +662,35 @@ h2 {
   background: var(--soft-blue);
 }
 
+.treatment-page .biosimilar-note {
+  margin: 24px 0;
+  padding: 16px 20px;
+  border: 1px solid #e9e3ca;
+  background: #fffbed;
+}
+
+.treatment-page .biosimilar-note p:first-child {
+  margin-top: 0;
+}
+
+.treatment-page .biosimilar-note p:last-child {
+  margin-bottom: 0;
+}
+
+.treatment-page .biosimilar-comparison {
+  min-width: 680px;
+  font-size: 0.9rem;
+}
+
+.treatment-page .biosimilar-comparison th,
+.treatment-page .biosimilar-comparison td {
+  padding: 10px 12px;
+}
+
+.treatment-page .biosimilar-comparison th:first-child {
+  width: 140px;
+}
+
 @media (max-width: 760px) {
   .treatment-page .drug-cards {
     grid-template-columns: 1fr;
