@@ -247,7 +247,7 @@ h2 {
   }
 }
 
-/* 疾患ページ専用。共通の配色と本文幅を使い、トップページには適用しない。 */
+/* 疾患・治療記事で共有。共通の配色と本文幅を使い、トップページには適用しない。 */
 .disease-page .breadcrumb,
 .disease-page .toc {
   display: block;
@@ -389,6 +389,102 @@ h2 {
   margin: 40px 0 0;
   padding-top: 20px;
   border-top: 1px solid var(--line);
+}
+
+/* 治療ページのカードとクイックリファレンス。 */
+.treatment-page .drug-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.treatment-page .drug-card dl {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.treatment-page .drug-card dt,
+.treatment-page .target-list dt {
+  margin-top: 12px;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.treatment-page .drug-card dd,
+.treatment-page .target-list dd {
+  margin: 0;
+}
+
+.treatment-page .table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.treatment-page .table-scroll:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.treatment-page .reference-table {
+  width: 100%;
+  min-width: 1120px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.treatment-page .reference-table caption {
+  padding-bottom: 12px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.treatment-page .reference-table th,
+.treatment-page .reference-table td {
+  padding: 14px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.treatment-page .reference-table th {
+  background: var(--soft-blue);
+  color: var(--heading);
+}
+
+.treatment-page .reference-table .no-indication {
+  background: var(--bg);
+  color: var(--muted);
+}
+
+.treatment-page .interval-details {
+  margin: 0;
+}
+
+.treatment-page .interval-details dt:not(:first-child) {
+  margin-top: 10px;
+}
+
+.treatment-page .interval-details dd {
+  margin: 0;
+}
+
+.treatment-page .data-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.treatment-page .important-note {
+  padding: 16px 20px;
+  border-left: 3px solid var(--accent);
+  background: var(--soft-blue);
+}
+
+@media (max-width: 760px) {
+  .treatment-page .drug-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 760px) {
