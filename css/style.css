@@ -478,11 +478,7 @@ h2 {
 .treatment-page .drug-comparison .notes-column { width: 250px; }
 .treatment-page .drug-comparison .price-column { width: 160px; }
 
-.treatment-page .drug-comparison tr > :nth-child(3) {
-  text-align: center;
-}
-
-.treatment-page .drug-comparison tr > :last-child {
+.treatment-page .drug-comparison tbody tr > td:last-child {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
@@ -514,7 +510,7 @@ h2 {
 }
 
 .treatment-page .badge-bs {
-  background: var(--soft-blue);
+  background: #e3eef7;
   color: var(--heading);
 }
 
@@ -522,12 +518,12 @@ h2 {
   color: var(--muted);
   font-size: inherit;
   font-style: normal;
-  text-align: center;
+  text-align: left;
 }
 
 .treatment-page .badge-biosame {
-  background: #edf3ed;
-  color: #415e48;
+  background: #eee8dc;
+  color: #605747;
 }
 
 .treatment-page .reference-column {
