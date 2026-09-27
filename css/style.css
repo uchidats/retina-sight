@@ -453,7 +453,7 @@ h2 {
   color: var(--heading);
 }
 
-.treatment-page .reference-table .no-indication {
+.treatment-page .not-indicated {
   background: var(--bg);
   color: var(--muted);
 }
@@ -504,9 +504,38 @@ h2 {
   justify-self: start;
   padding: 2px 8px;
   border-radius: 4px;
+  font-size: 1.15rem;
+}
+
+.treatment-page .interval-standard {
   background: var(--soft-blue);
   color: var(--heading);
-  font-size: 1.15rem;
+}
+
+.treatment-page .interval-caution {
+  background: #fff0d6;
+  color: #795018;
+}
+
+.treatment-page .interval-color-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin: 16px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.treatment-page .legend-swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 6px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  vertical-align: -0.1em;
 }
 
 .treatment-page .leaflet-placeholder,
