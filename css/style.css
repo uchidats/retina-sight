@@ -685,8 +685,68 @@ h2 {
   margin-bottom: 0;
 }
 
-.regimen-page .phase-cards {
+.regimen-page .phase-cards,
+.regimen-page .strategy-cards {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.regimen-page .strategy-diagram {
+  margin: 24px 0;
+}
+
+.regimen-page .strategy-diagram figcaption {
+  color: var(--heading);
+  font-weight: 700;
+}
+
+.regimen-page .strategy-tree {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.regimen-page .strategy-parent {
+  display: block;
+  padding: 10px 14px;
+  background: var(--soft-blue);
+  color: var(--heading);
+}
+
+.regimen-page .strategy-parent small {
+  display: block;
+  color: var(--muted);
+}
+
+.regimen-page .strategy-tree ul {
+  margin: 0 0 0 16px;
+  padding: 8px 0 0;
+  list-style: none;
+}
+
+.regimen-page .strategy-tree ul li {
+  position: relative;
+  padding: 8px 0 8px 20px;
+  border-left: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+
+.regimen-page .strategy-tree ul li::before {
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  width: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.regimen-page .strategy-message h3 {
+  margin-top: 0;
+}
+
+.regimen-page .strategy-message p:last-child {
+  margin-bottom: 0;
 }
 
 .regimen-page .phase-name {
@@ -762,6 +822,8 @@ h2 {
 
 @media (max-width: 760px) {
   .regimen-page .phase-cards,
+  .regimen-page .strategy-cards,
+  .regimen-page .strategy-tree,
   .regimen-page .te-decisions {
     grid-template-columns: 1fr;
   }
