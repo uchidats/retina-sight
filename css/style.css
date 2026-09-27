@@ -440,6 +440,14 @@ h2 {
   color: var(--heading);
 }
 
+.treatment-page .table-caption-description {
+  display: block;
+  margin-top: 6px;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
 .treatment-page .reference-table th,
 .treatment-page .reference-table td {
   padding: 14px;
