@@ -509,11 +509,6 @@ h2 {
   white-space: nowrap;
 }
 
-.treatment-page .badge-bs {
-  background: #e3eef7;
-  color: var(--heading);
-}
-
 .treatment-page .drug-comparison .same-as-parent {
   color: var(--muted);
   font-size: inherit;
@@ -521,6 +516,7 @@ h2 {
   text-align: left;
 }
 
+.treatment-page .badge-bs,
 .treatment-page .badge-biosame {
   background: #eee8dc;
   color: #605747;
