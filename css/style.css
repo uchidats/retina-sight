@@ -580,6 +580,11 @@ h2 {
 .treatment-page .interval-lines {
   display: grid;
   gap: 4px;
+  text-align: left;
+}
+
+.treatment-page .interval-lines > strong + span {
+  margin-top: 4px;
 }
 
 .treatment-page .interval-lines strong {
