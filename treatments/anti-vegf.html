@@ -47,7 +47,7 @@
             <li><a href="#overview">抗VEGF薬とは</a></li>
             <li><a href="#targets">何を抑える薬？</a></li>
             <li><a href="#drugs">主な抗VEGF薬</a></li>
-            <li><a href="#comparison">医療者向け：薬剤比較</a></li>
+            <li><a href="#comparison">医療者向け：薬剤比較クイックリファレンス</a></li>
             <li><a href="#intervals">医療者向け：適応疾患・投与間隔</a></li>
             <li><a href="#biosimilars">バイオシミラーとバイオセイム</a></li>
             <li><a href="#safety">主な副作用・注意点</a></li>
@@ -133,22 +133,36 @@
             <p>抗VEGF薬は、製剤によって適応疾患や電子添文上の投与間隔が異なります。診療時に確認しやすいよう、主な情報を一覧にまとめています。</p>
           </header>
         <section class="disease-section" aria-labelledby="comparison">
-          <h3 id="comparison">薬剤比較</h3>
-          <p class="data-note">未掲載の情報は確認・掲載準備中です。</p>
+          <h3 id="comparison">薬剤比較クイックリファレンス</h3>
+          <p>主な抗VEGF薬について、国内での登場時期、分子構造、標的となる分子、特徴をまとめています。</p>
           <p id="comparison-scroll" class="data-note">表は横にスクロールできます。</p>
           <div class="table-scroll" role="region" aria-labelledby="comparison" aria-describedby="comparison-scroll" tabindex="0">
             <table class="reference-table drug-comparison">
-              <caption>抗VEGF薬の比較</caption>
-              <thead><tr><th scope="col">一般名</th><th scope="col">製品名</th><th scope="col">国内発売年</th><th scope="col">分子・構造</th><th scope="col">主な標的</th><th scope="col">特徴・留意点</th><th scope="col">薬価</th></tr></thead>
+              <caption>抗VEGF薬の比較<span class="table-caption-description">薬価は原則としてキット製剤を優先して表示します。</span></caption>
+              <colgroup><col class="generic-column"><col class="product-column"><col class="year-column"><col class="structure-column"><col class="target-column"><col class="notes-column"><col class="price-column"></colgroup>
+              <thead><tr><th scope="col">一般名</th><th scope="col">製品名</th><th scope="col">国内発売</th><th scope="col">分子構造</th><th scope="col">主な標的</th><th scope="col">特徴・留意点</th><th scope="col">薬価<br><span class="data-note">（2026年9月確認）</span></th></tr></thead>
+              <tbody aria-label="ルセンティスと関連製剤">
+                <tr><th scope="row">ラニビズマブ</th><td>ルセンティス</td><td>2009</td><td>Fab</td><td><span class="target-molecule">VEGF-A</span></td><td>長い臨床使用実績。<br>バイオシミラーあり。</td><td><span class="drug-price">92,753円</span></td></tr>
+                <tr class="related-drug-row"><th scope="row"><span class="drug-badge badge-bs">BS</span><span class="related-drug-parent">ルセンティス関連</span></th><td>ラニビズマブBS「センジュ」</td><td>確認中</td><td>確認中</td><td>確認中</td><td>確認中</td><td><span class="drug-price">72,136円</span></td></tr>
+              </tbody>
+              <tbody aria-label="アイリーア2 mgと関連製剤">
+                <tr><th scope="row">アフリベルセプト</th><td>アイリーア2 mg</td><td>2012</td><td>VEGF受容体融合蛋白</td><td><span class="target-molecule">VEGF-A</span><span class="target-molecule">VEGF-B</span><span class="target-molecule">PlGF</span></td><td>幅広い網膜疾患に使用。<br>バイオシミラー、バイオセイムあり。</td><td><span class="drug-price">99,522円</span></td></tr>
+                <tr class="related-drug-row"><th scope="row"><span class="drug-badge badge-bs">BS</span><span class="related-drug-parent">アイリーア2 mg関連</span></th><td>アフリベルセプトBS「NIT」</td><td>確認中</td><td>確認中</td><td>確認中</td><td>確認中</td><td><span class="drug-price">67,959円</span></td></tr>
+                <tr class="related-drug-row"><th scope="row"><span class="drug-badge badge-biosame">バイオセイム</span><span class="related-drug-parent">アイリーア2 mg関連</span></th><td>アフリベルセプト「バイエル」</td><td>確認中</td><td>確認中</td><td>確認中</td><td>確認中</td><td><span class="drug-price">67,959円</span></td></tr>
+              </tbody>
               <tbody>
-                <tr><th scope="row">ラニビズマブ</th><td>ルセンティス</td><td>2009年</td><td>VEGF-Aに結合する抗体断片（Fab）。</td><td>VEGF-A</td><td>眼科領域で長い使用実績があり、バイオシミラーも使用されています。</td><td>確認・掲載準備中<br><span class="data-note">更新年月：未確認</span></td></tr>
-                <tr><th scope="row">アフリベルセプト2 mg</th><td>アイリーア2 mg</td><td>2012年</td><td>VEGF受容体の一部を利用した融合タンパク質。</td><td>VEGF-A、VEGF-B、PlGF</td><td>複数のVEGFファミリーに結合し、幅広い網膜疾患に使用されています。</td><td>確認・掲載準備中<br><span class="data-note">更新年月：未確認</span></td></tr>
-                <tr><th scope="row">ブロルシズマブ</th><td>ベオビュ</td><td>2020年</td><td>低分子量の一本鎖抗体断片（scFv）。</td><td>VEGF-A</td><td>眼内炎症、網膜血管炎、網膜血管閉塞などに注意が必要です。</td><td>確認・掲載準備中<br><span class="data-note">更新年月：未確認</span></td></tr>
-                <tr><th scope="row">ファリシマブ</th><td>バビースモ</td><td>2022年</td><td>VEGF-AとAng-2という2つの経路を標的とする二重特異性抗体です。</td><td>VEGF-A、Ang-2</td><td>VEGF-AとAng-2という2つの経路を標的とする二重特異性抗体です。</td><td>確認・掲載準備中<br><span class="data-note">更新年月：未確認</span></td></tr>
-                <tr><th scope="row">アフリベルセプト8 mg</th><td>アイリーア8 mg</td><td>2024年</td><td>確認・掲載準備中</td><td>VEGF-A、VEGF-B、PlGF</td><td>アイリーア2 mgとは用法・用量が異なり、より長い投与間隔を目指して開発された製剤です。</td><td>確認・掲載準備中<br><span class="data-note">更新年月：未確認</span></td></tr>
+                <tr><th scope="row">ブロルシズマブ</th><td>ベオビュ</td><td>2020</td><td>scFv<br>（一本鎖抗体断片）</td><td><span class="target-molecule">VEGF-A</span></td><td>小型の抗体断片。<br>眼内炎症、網膜血管炎、網膜血管閉塞に留意。</td><td>確認中</td></tr>
+                <tr><th scope="row">ファリシマブ</th><td>バビースモ</td><td>2022</td><td>二重特異性抗体</td><td><span class="target-molecule">VEGF-A</span><span class="target-molecule">Ang-2</span></td><td>VEGF-AとAng-2の2つの経路を標的とする。</td><td>確認中</td></tr>
+                <tr><th scope="row">アフリベルセプト</th><td>アイリーア8 mg</td><td>2024</td><td>VEGF受容体融合蛋白</td><td><span class="target-molecule">VEGF-A</span><span class="target-molecule">VEGF-B</span><span class="target-molecule">PlGF</span></td><td>アフリベルセプトの高用量製剤。<br>アイリーア2 mgとは用法・用量が異なる。</td><td>確認中</td></tr>
               </tbody>
             </table>
           </div>
+          <p class="data-note">薬価は2026年9月確認。薬価改定により変更されることがあります。表示価格は薬剤そのものの薬価であり、患者さんの実際の窓口負担額とは異なります。</p>
+          <aside class="reference-column" aria-labelledby="generation-heading">
+            <h4 id="generation-heading">抗VEGF薬に「世代」はある？</h4>
+            <p>抗VEGF薬について『第1世代』『第2世代』などと表現されることがありますが、統一された公式分類ではありません。</p>
+            <p>Retina Sightでは混乱を避けるため、国内発売年、分子構造、標的分子を併記しています。</p>
+          </aside>
         </section>
 
         <section class="disease-section" aria-labelledby="intervals">
