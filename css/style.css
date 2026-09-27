@@ -517,8 +517,17 @@ h2 {
 }
 
 .treatment-page .badge-bs {
+  padding: 2px 5px;
+  font-size: 0.75rem;
+  white-space: nowrap;
   background: var(--soft-blue);
   color: var(--heading);
+}
+
+.treatment-page .drug-comparison .same-as-parent {
+  color: var(--muted);
+  font-style: normal;
+  text-align: center;
 }
 
 .treatment-page .badge-biosame {
