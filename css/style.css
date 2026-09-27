@@ -685,6 +685,92 @@ h2 {
   margin-bottom: 0;
 }
 
+.regimen-page .phase-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.regimen-page .phase-name {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.regimen-page .te-card {
+  border-color: var(--accent);
+}
+
+.regimen-page .te-diagram {
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--soft-blue);
+}
+
+.regimen-page .te-diagram figcaption {
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.regimen-page .interval-steps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.regimen-page .interval-steps li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--heading);
+  font-weight: 700;
+}
+
+.regimen-page .interval-steps li > span:last-child {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  white-space: nowrap;
+}
+
+.regimen-page .te-decisions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.regimen-page .te-decisions p {
+  margin: 0;
+}
+
+.regimen-page .regimen-comparison {
+  min-width: 760px;
+}
+
+.regimen-page .regimen-comparison th:first-child {
+  width: 110px;
+}
+
+@media (max-width: 760px) {
+  .regimen-page .phase-cards,
+  .regimen-page .te-decisions {
+    grid-template-columns: 1fr;
+  }
+
+  .regimen-page .te-diagram {
+    padding: 16px;
+  }
+}
+
 .treatment-page .biosimilar-comparison {
   min-width: 860px;
   font-size: 0.9rem;
